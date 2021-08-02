@@ -2,4 +2,7 @@
     <string name="app_name">Instagram</string>
     <string name="from">from</string>
     <string name="facebook">FACEBOOK</string>
+    <string name="loginHint">Telefon numarası, e-posta adresi veya kullanıcı adı</string>
+    <string name="sifreHint">Şifre</string>
+    <string name="btnGiris">Giriş Yap</string>
 </resources>

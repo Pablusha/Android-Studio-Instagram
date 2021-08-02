@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/ac_splash_logo"
+            android:id="@+id/ac_splash_imgLogo"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_70sdp"
             android:layout_marginTop="@dimen/_200sdp"
@@ -22,7 +22,7 @@
             android:id="@+id/ac_splash_tvFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ac_splash_logo"
+            android:layout_below="@id/ac_splash_imgLogo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_140sdp"
             android:text="@string/from"
