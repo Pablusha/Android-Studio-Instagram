@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class SplashActivity extends AppCompatActivity {
 
     private TextView txtFacebook;
-    private int GECIS_SURESI = 2000;
+    private int GECIS_SURESI = 7000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

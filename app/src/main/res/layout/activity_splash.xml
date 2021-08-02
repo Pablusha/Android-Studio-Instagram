@@ -15,7 +15,7 @@
             android:id="@+id/ac_splash_logo"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_70sdp"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_200sdp"
             android:src="@drawable/logo" />
 
         <TextView
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/ac_splash_logo"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/_140sdp"
             android:text="@string/from"
             android:textColor="#989898"
             android:textSize="@dimen/_15sdp" />
@@ -37,6 +37,7 @@
             android:layout_centerHorizontal="true"
             android:text="@string/facebook"
             android:textSize="@dimen/_16sdp" />
+
     </RelativeLayout>
 
 </RelativeLayout>
