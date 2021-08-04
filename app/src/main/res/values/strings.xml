@@ -5,4 +5,10 @@
     <string name="loginHint">Telefon numarası, e-posta adresi veya kullanıcı adı</string>
     <string name="sifreHint">Şifre</string>
     <string name="btnGiris">Giriş Yap</string>
+    <string name="girisYardim">Giriş detaylarını mı unuttun?</string>
+    <string name="girisYardimLink">Giriş yapmak için yardım al.</string>
+    <string name="textYada">YA DA</string>
+    <string name="girisWithFacebook">Facebook ile Giriş Yap</string>
+    <string name="textKayit">Hesabın yok mu?</string>
+    <string name="textKayitLink">Kaydol.</string>
 </resources>

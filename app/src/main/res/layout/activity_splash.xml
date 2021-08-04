@@ -26,7 +26,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_140sdp"
             android:text="@string/from"
-            android:textColor="#989898"
+            android:textColor="@color/gray"
             android:textSize="@dimen/_15sdp" />
 
         <TextView

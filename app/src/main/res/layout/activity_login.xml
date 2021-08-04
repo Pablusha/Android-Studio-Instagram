@@ -10,14 +10,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
+
         <ImageView
             android:id="@+id/ac_login_imgLogo"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_120sdp"
-            android:src="@drawable/loginlogo"
-            android:layout_marginTop="@dimen/_65sdp" />
-        
+            android:layout_marginTop="@dimen/_65sdp"
+            android:src="@drawable/loginlogo" />
+
         <EditText
             android:id="@+id/ac_login_etUsername"
             android:layout_width="@dimen/_260sdp"
@@ -35,13 +35,13 @@
             android:layout_width="@dimen/_260sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_login_etUsername"
-            android:hint="@string/sifreHint"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/edit_text_background"
+            android:hint="@string/sifreHint"
             android:paddingStart="@dimen/_8sdp"
-            android:textSize="@dimen/_12sdp"
             android:singleLine="true"
-            android:layout_marginTop="@dimen/_15sdp" />
+            android:textSize="@dimen/_12sdp" />
 
         <Button
             android:id="@+id/ac_login_btnGirisYap"
@@ -51,8 +51,100 @@
             android:hint="@string/btnGiris"
             android:layout_centerHorizontal="true"
             android:textSize="@dimen/_12sdp"
-            android:layout_marginTop="@dimen/_10sdp" />
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_background"
+            android:textColorHint="@color/btnGirisHint" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac_login_btnGirisYap"
+            android:text="@string/girisYardim"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/ac_login_tvGirisYardim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac_login_btnGirisYap"
+            android:text="@string/girisYardimLink"
+            android:layout_marginStart="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textColor="@color/textLinkColor"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_108sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ac_login_tvGirisYardim"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:background="@color/viewColor"
+            android:layout_marginStart="@dimen/_20sdp" />
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ac_login_tvGirisYardim"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:background="@color/viewColor"
+            android:layout_marginStart="@dimen/_173sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textYada"
+            android:layout_below="@id/ac_login_tvGirisYardim"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/ac_login_btnGirisWithFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac_login_tvGirisYardim"
+            android:text="@string/girisWithFacebook"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_44sdp"
+            android:textColor="@color/facebook"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:drawablePadding="@dimen/_4sdp" />
+
+        <View
+            android:id="@+id/ac_login_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ac_login_btnGirisWithFacebook"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@color/viewColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac_login_view"
+            android:text="@string/textKayit"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac_login_view"
+            android:text="@string/textKayitLink"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/textLinkColor"
+            android:layout_marginStart="@dimen/_168sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp" />
 
     </RelativeLayout>
 
