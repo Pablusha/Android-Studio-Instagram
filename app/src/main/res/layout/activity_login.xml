@@ -38,8 +38,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/edit_text_background"
+            android:drawableEnd="@drawable/ic__473003_hide_hide_eye_hide_password_icon"
             android:hint="@string/sifreHint"
             android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_10sdp"
             android:singleLine="true"
             android:textSize="@dimen/_12sdp" />
 
@@ -107,15 +109,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ac_login_tvGirisYardim"
-            android:text="@string/girisWithFacebook"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_44sdp"
-            android:textColor="@color/facebook"
-            android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_44sdp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
+            android:drawablePadding="@dimen/_4sdp"
+            android:text="@string/girisWithFacebook"
             android:textAllCaps="false"
-            android:drawablePadding="@dimen/_4sdp" />
+            android:textColor="@color/facebook"
+            android:textStyle="bold" />
 
         <View
             android:id="@+id/ac_login_view"
