@@ -11,4 +11,8 @@
     <string name="girisWithFacebook">Facebook ile Giriş Yap</string>
     <string name="textKayit">Hesabın yok mu?</string>
     <string name="textKayitLink">Kaydol.</string>
+    <string name="textFacebookGiris">Facebook ile Giriş Yap</string>
+    <string name="EmailOrUsernameText">E-posta adresi veya telefon numarasıyla kaydol</string>
+    <string name="hesabinVarMi">Hesabın zaten var mı?</string>
+    <string name="girisYap">Giriş yap.</string>
 </resources>

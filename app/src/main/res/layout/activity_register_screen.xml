@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,38 +31,84 @@
             android:paddingStart="@dimen/_70sdp"
             android:paddingEnd="@dimen/_66sdp"
             android:singleLine="true"
-            android:text="Facebook ile Giriş Yap"
+            android:text="@string/textFacebookGiris"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="#ffffff" />
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <View
             android:layout_width="@dimen/_115sdp"
             android:layout_height="@dimen/_1sdp"
-            android:layout_below="@id/ac_register_btnGirisWithFacebook"
             android:layout_marginStart="@dimen/_12sdp"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_58sdp"
             android:background="@color/viewColor" />
 
         <View
             android:layout_width="@dimen/_110sdp"
             android:layout_height="@dimen/_1sdp"
-            android:layout_below="@id/ac_register_btnGirisWithFacebook"
             android:layout_marginStart="@dimen/_170sdp"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_58sdp"
+            android:background="@color/viewColor" />
+
+        <TextView
+            android:id="@+id/ac_register_txtYada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_51sdp"
+            android:text="@string/textYada"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/ac_register_btnEmailOrPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EmailOrUsernameText"
+            android:background="@android:color/transparent"
+            android:textColor="@color/facebook"
+            android:layout_below="@id/ac_register_txtYada"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_64sdp"
             android:background="@color/viewColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ac_register_btnGirisWithFacebook"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_43sdp"
-            android:text="@string/textYada"
-            android:textColor="@color/gray" />
-        
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_77sdp"
+            android:text="@string/hesabinVarMi"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/ac_register_txtGirisYap"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_181sdp"
+            android:layout_marginTop="@dimen/_77sdp"
+            android:text="@string/girisYap"
+            android:textColor="@color/textLinkColor"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
     </RelativeLayout>
 
-
-
-</RelativeLayout>
+</LinearLayout>
