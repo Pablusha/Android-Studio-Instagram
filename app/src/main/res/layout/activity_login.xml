@@ -83,9 +83,9 @@
             android:layout_width="@dimen/_108sdp"
             android:layout_height="@dimen/_1sdp"
             android:layout_below="@id/ac_login_tvGirisYardim"
+            android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_23sdp"
-            android:background="@color/viewColor"
-            android:layout_marginStart="@dimen/_20sdp" />
+            android:background="@color/viewColor" />
 
         <View
             android:layout_width="@dimen/_100sdp"
