@@ -15,4 +15,8 @@
     <string name="EmailOrUsernameText">E-posta adresi veya telefon numarasıyla kaydol</string>
     <string name="hesabinVarMi">Hesabın zaten var mı?</string>
     <string name="girisYap">Giriş yap.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="telefon">TELEFON</string>
+    <string name="email">E-POSTA</string>
 </resources>

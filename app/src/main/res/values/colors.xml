@@ -9,4 +9,5 @@
     <color name="viewColor">#81989898</color>
     <color name="facebook">#009BFF</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 </resources>
