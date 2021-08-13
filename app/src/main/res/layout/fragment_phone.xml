@@ -3,7 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PhoneFragment">
 
-    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ac_secondRegister_ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_300sdp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_contentColor="@color/gray"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/ac_secondRegister_etPhone"
+            android:layout_width="@dimen/_256sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_300sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/telefon"
+            android:inputType="phone"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColor="@color/btnGirisHint" />
+
+        <Button
+            android:id="@+id/ac_secondRegister_btnIleriPhone"
+            android:layout_width="@dimen/_256sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/ac_secondRegister_etPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:background="@drawable/button_background"
+            android:text="@string/ileri"
+            android:textAllCaps="false"
+            android:textColor="@color/btnGirisHint" />
+
+    </RelativeLayout>
+
 </FrameLayout>
