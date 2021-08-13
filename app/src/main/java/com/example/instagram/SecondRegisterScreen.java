@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -32,10 +33,9 @@ public class SecondRegisterScreen extends AppCompatActivity {
         initViews();
 
         adapterSettings();
-
     }
 
-    private void initViews() {
+    public void initViews() {
         tlPhoneOrEmail = findViewById(R.id.ac_secondRegister_tlPhoneOrEmail);
         viewPager = findViewById(R.id.ac_secondRegister_viewPager);
         tiTelefon = findViewById(R.id.ac_secondRegister_tiTelefon);
@@ -44,23 +44,23 @@ public class SecondRegisterScreen extends AppCompatActivity {
     }
 
     public void adapterSettings() {
-        PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager(),tlPhoneOrEmail.
+        PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager(), tlPhoneOrEmail.
                 getTabCount());
         viewPager.setAdapter(pageAdapter);
 
-        tlPhoneOrEmail.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab) {
+            public void onPageSelected(int position) {
+                tlPhoneOrEmail.selectTab(tlPhoneOrEmail.getTabAt(position));
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
 
             }
         });

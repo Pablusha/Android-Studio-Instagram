@@ -19,4 +19,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="telefon">TELEFON</string>
     <string name="email">E-POSTA</string>
+    <string name="emailHint">E-posta</string>
+    <string name="ileri">İleri</string>
 </resources>

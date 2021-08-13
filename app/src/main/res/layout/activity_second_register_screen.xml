@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondRegisterScreen">
-    
+    tools:context=".SecondRegisterScreen"
+    android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -23,8 +24,8 @@
             android:id="@+id/ac_secondRegister_tlPhoneOrEmail"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:layout_below="@id/ac_secondRegister_emptyProfile"
             android:layout_marginTop="@dimen/_30sdp"
+            android:layout_below="@id/ac_secondRegister_emptyProfile"
             android:background="@android:color/transparent"
             app:tabIndicatorColor="@color/black"
             android:layout_marginStart="@dimen/_20sdp"
