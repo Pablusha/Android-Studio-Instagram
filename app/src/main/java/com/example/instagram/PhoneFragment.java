@@ -56,6 +56,11 @@ public class PhoneFragment extends Fragment {
                     Toast.makeText(getActivity(),"Telefon numarası boş bırakılamaz.",Toast.LENGTH_LONG).show();
                     return;
                 }
+
+
+
+                startActivity(new Intent(getActivity(),ThirdPhoneRegisterScreen.class));
+
             }
         });
 

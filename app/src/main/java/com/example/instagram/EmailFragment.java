@@ -61,8 +61,9 @@ public class EmailFragment extends Fragment {
                     Toast.makeText(getActivity(),"Email kısmı boş bırakılamaz.",Toast.LENGTH_LONG).show();
                     return;
                 }
-                
-                startActivity(new Intent(getActivity(),ThirdRegisterScreen.class));
+
+
+                startActivity(new Intent(getActivity(),ThirdEmailRegisterScreen.class));
             }
         });
 

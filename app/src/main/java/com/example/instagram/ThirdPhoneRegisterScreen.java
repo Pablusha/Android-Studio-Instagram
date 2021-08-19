@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ThirdRegisterScreen extends AppCompatActivity {
+public class ThirdPhoneRegisterScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third_register_screen);
+        setContentView(R.layout.activity_third_phone_register_screen);
     }
 }
