@@ -17,21 +17,21 @@
             android:layout_marginTop="@dimen/_300sdp"
             app:ccp_autoDetectCountry="true"
             app:ccp_contentColor="@color/gray"
-            android:background="@drawable/edit_text_background" />
+            android:background="@drawable/edit_text_background"
+            android:layout_marginStart="@dimen/_20sdp"   />
 
         <EditText
             android:id="@+id/ac_secondRegister_etPhone"
-            android:layout_width="@dimen/_256sdp"
+            android:layout_width="@dimen/_142sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_136sdp"
             android:layout_marginTop="@dimen/_300sdp"
             android:background="@drawable/edit_text_background"
             android:hint="@string/telefon"
             android:inputType="phone"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_8sdp"
-            android:singleLine="true"
-            android:textColor="@color/btnGirisHint" />
+            android:singleLine="true" />
 
         <Button
             android:id="@+id/ac_secondRegister_btnIleriPhone"
@@ -44,6 +44,35 @@
             android:text="@string/ileri"
             android:textAllCaps="false"
             android:textColor="@color/btnGirisHint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_76sdp"
+            android:background="@color/viewColor"
+            android:layout_below="@id/ac_secondRegister_btnIleriPhone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:text="@string/hesabinVarMi"
+            android:layout_below="@id/ac_secondRegister_btnIleriPhone"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/ac_secondRegisterPhone_txtGirisYap"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_181sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_below="@id/ac_secondRegister_btnIleriPhone"
+            android:text="@string/girisYap"
+            android:textColor="@color/textLinkColor"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

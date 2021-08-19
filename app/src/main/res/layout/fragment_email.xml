@@ -17,14 +17,14 @@
             android:layout_marginTop="@dimen/_300sdp"
             android:background="@drawable/edit_text_background"
             android:hint="@string/emailHint"
+            android:inputType="textEmailAddress"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_8sdp"
             android:singleLine="true"
-            android:textSize="@dimen/_12sdp"
-            android:inputType="textEmailAddress" />
+            android:textSize="@dimen/_12sdp" />
 
         <Button
-            android:id="@+id/ac_secondRegister_btnIleri"
+            android:id="@+id/ac_secondRegister_btnIleriEmail"
             android:layout_width="@dimen/_260sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_etEmail"
@@ -40,7 +40,7 @@
             android:layout_height="@dimen/_1sdp"
             android:layout_marginTop="@dimen/_76sdp"
             android:background="@color/viewColor"
-            android:layout_below="@id/ac_secondRegister_btnIleri" />
+            android:layout_below="@id/ac_secondRegister_btnIleriEmail" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,17 +48,17 @@
             android:layout_marginStart="@dimen/_80sdp"
             android:layout_marginTop="@dimen/_90sdp"
             android:text="@string/hesabinVarMi"
-            android:layout_below="@id/ac_secondRegister_btnIleri"
+            android:layout_below="@id/ac_secondRegister_btnIleriEmail"
             android:textColor="@color/gray"
             android:textSize="@dimen/_10sdp" />
 
         <TextView
-            android:id="@+id/ac_register_txtGirisYap"
+            android:id="@+id/ac_secondRegisterEmail_txtGirisYap"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_181sdp"
             android:layout_marginTop="@dimen/_90sdp"
-            android:layout_below="@id/ac_secondRegister_btnIleri"
+            android:layout_below="@id/ac_secondRegister_btnIleriEmail"
             android:text="@string/girisYap"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"
