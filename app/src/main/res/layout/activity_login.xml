@@ -62,9 +62,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ac_login_btnGirisYap"
-            android:text="@string/girisYardim"
             android:layout_marginStart="@dimen/_22sdp"
             android:layout_marginTop="@dimen/_13sdp"
+            android:text="@string/girisYardim"
             android:textColor="@color/gray"
             android:textSize="@dimen/_10sdp" />
 
