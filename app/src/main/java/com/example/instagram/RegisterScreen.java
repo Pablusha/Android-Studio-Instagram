@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class RegisterScreen extends AppCompatActivity {
 
     private TextView txtGirisYap;
-    private Button btnFacebook,btnKaydol;
+    private Button btnKaydol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,7 @@ public class RegisterScreen extends AppCompatActivity {
 
     private void initViews() {
         txtGirisYap = findViewById(R.id.ac_register_txtGirisYap);
-        btnFacebook = findViewById(R.id.ac_register_btnGirisWithFacebook);
-        btnKaydol = findViewById(R.id.ac_register_btnEmailOrPhoneNumber);
+        btnKaydol = findViewById(R.id.ac_register_btnEmail);
     }
 
     private void goToLogin() {

@@ -51,12 +51,12 @@
             android:layout_width="@dimen/_260sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_below="@id/ac_login_etSifre"
-            android:hint="@string/btnGiris"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/_12sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/button_background"
-            android:textColorHint="@color/btnGirisHint" />
+            android:hint="@string/btnGiris"
+            android:textColorHint="@color/btnGirisHint"
+            android:textSize="@dimen/_12sdp" />
 
         <TextView
             android:layout_width="wrap_content"

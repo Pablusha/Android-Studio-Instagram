@@ -18,63 +18,22 @@
             android:layout_marginTop="@dimen/_105sdp"
             android:src="@drawable/loginlogo" />
 
-        <Button
-            android:id="@+id/ac_register_btnGirisWithFacebook"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ac_register_imgLogo"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_35sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:background="@drawable/button_facebook_background"
-            android:drawableStart="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
-            android:paddingStart="@dimen/_70sdp"
-            android:paddingEnd="@dimen/_66sdp"
-            android:singleLine="true"
-            android:text="@string/textFacebookGiris"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white" />
-
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
-            android:layout_width="@dimen/_115sdp"
-            android:layout_height="@dimen/_1sdp"
-            android:layout_marginStart="@dimen/_12sdp"
-            android:layout_marginTop="@dimen/_58sdp"
-            android:background="@color/viewColor" />
-
-        <View
-            android:layout_width="@dimen/_110sdp"
-            android:layout_height="@dimen/_1sdp"
-            android:layout_marginStart="@dimen/_170sdp"
-            android:layout_marginTop="@dimen/_58sdp"
-            android:background="@color/viewColor" />
-
-        <TextView
-            android:id="@+id/ac_register_txtYada"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_51sdp"
-            android:text="@string/textYada"
-            android:textColor="@color/gray" />
-
         <Button
-            android:id="@+id/ac_register_btnEmailOrPhoneNumber"
+            android:id="@+id/ac_register_btnEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/EmailOrUsernameText"
-            android:background="@android:color/transparent"
-            android:textColor="@color/facebook"
-            android:layout_below="@id/ac_register_txtYada"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@android:color/transparent"
+            android:text="@string/EmailOrUsernameText"
             android:textAllCaps="false"
+            android:textColor="@color/facebook"
             android:textStyle="bold" />
 
     </RelativeLayout>
@@ -86,14 +45,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:layout_marginTop="@dimen/_64sdp"
+            android:layout_marginTop="@dimen/_150sdp"
             android:background="@color/viewColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_80sdp"
-            android:layout_marginTop="@dimen/_77sdp"
+            android:layout_marginTop="@dimen/_167sdp"
             android:text="@string/hesabinVarMi"
             android:textColor="@color/gray"
             android:textSize="@dimen/_10sdp" />
@@ -103,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_181sdp"
-            android:layout_marginTop="@dimen/_77sdp"
+            android:layout_marginTop="@dimen/_167sdp"
             android:text="@string/girisYap"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"

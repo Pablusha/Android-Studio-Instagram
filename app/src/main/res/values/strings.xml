@@ -12,7 +12,7 @@
     <string name="textKayit">Hesabın yok mu?</string>
     <string name="textKayitLink">Kaydol.</string>
     <string name="textFacebookGiris">Facebook ile Giriş Yap</string>
-    <string name="EmailOrUsernameText">E-posta adresi veya telefon numarasıyla kaydol</string>
+    <string name="EmailOrUsernameText">E-posta adresi ile kayıt ol</string>
     <string name="hesabinVarMi">Hesabın zaten var mı?</string>
     <string name="girisYap">Giriş yap.</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -21,4 +21,9 @@
     <string name="email">E-POSTA</string>
     <string name="emailHint">E-posta</string>
     <string name="ileri">İleri</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="fullName">Ad Soyad</string>
+    <string name="password">Şifre</string>
+    <string name="confirmPassword">Şifre Onay</string>
+    <string name="kayitOl">Kayıt Ol</string>
 </resources>
