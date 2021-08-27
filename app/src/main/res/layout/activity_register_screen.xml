@@ -25,11 +25,51 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/ac_register_btnFacebook"
+            android:layout_width="@dimen/_256sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/girisWithFacebook"
+            android:textAllCaps="false"
+            android:background="@drawable/button_facebook_background"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
+            android:paddingStart="@dimen/_57sdp"
+            android:paddingEnd="@dimen/_57sdp"
+            android:layout_marginTop="@dimen/_40sdp" />
+
+        <View
+            android:layout_width="@dimen/_108sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ac_register_btnFacebook"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:background="@color/viewColor" />
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ac_register_btnFacebook"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:background="@color/viewColor"
+            android:layout_marginStart="@dimen/_173sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textYada"
+            android:layout_below="@id/ac_register_btnFacebook"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_48sdp" />
+
+        <Button
             android:id="@+id/ac_register_btnEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_63sdp"
+            android:layout_below="@id/ac_register_btnFacebook"
             android:background="@android:color/transparent"
             android:text="@string/EmailOrUsernameText"
             android:textAllCaps="false"
@@ -45,14 +85,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:layout_marginTop="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_60sdp"
             android:background="@color/viewColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_80sdp"
-            android:layout_marginTop="@dimen/_167sdp"
+            android:layout_marginTop="@dimen/_76sdp"
             android:text="@string/hesabinVarMi"
             android:textColor="@color/gray"
             android:textSize="@dimen/_10sdp" />
@@ -62,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_181sdp"
-            android:layout_marginTop="@dimen/_167sdp"
+            android:layout_marginTop="@dimen/_76sdp"
             android:text="@string/girisYap"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"

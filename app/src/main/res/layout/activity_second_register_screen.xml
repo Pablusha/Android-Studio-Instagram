@@ -46,12 +46,12 @@
             android:layout_width="@dimen/_256sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_etFullName"
-            android:background="@drawable/edit_text_background"
             android:layout_centerHorizontal="true"
-            android:hint="@string/email"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/emailHint"
             android:paddingStart="@dimen/_8sdp"
-            android:paddingEnd="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_15sdp" />
+            android:paddingEnd="@dimen/_8sdp" />
 
         <EditText
             android:id="@+id/ac_secondRegister_etPassword"
