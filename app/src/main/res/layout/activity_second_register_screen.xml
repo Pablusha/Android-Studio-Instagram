@@ -23,8 +23,8 @@
             android:layout_width="@dimen/_256sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_imgLogo"
-            android:background="@drawable/edit_text_background"
             android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_text_background"
             android:hint="@string/username"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_8sdp" />
@@ -34,12 +34,13 @@
             android:layout_width="@dimen/_256sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_etUsername"
-            android:background="@drawable/edit_text_background"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
             android:hint="@string/fullName"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_15sdp" />
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/ac_secondRegister_etEmail"
@@ -51,45 +52,46 @@
             android:background="@drawable/edit_text_background"
             android:hint="@string/emailHint"
             android:paddingStart="@dimen/_8sdp"
-            android:paddingEnd="@dimen/_8sdp" />
+            android:paddingEnd="@dimen/_8sdp"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/ac_secondRegister_etPassword"
             android:layout_width="@dimen/_256sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_etEmail"
-            android:background="@drawable/edit_text_background"
             android:layout_centerHorizontal="true"
-            android:hint="@string/password"
-            android:paddingStart="@dimen/_8sdp"
-            android:paddingEnd="@dimen/_8sdp"
             android:layout_marginTop="@dimen/_15sdp"
-            android:inputType="textPassword" />
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp" />
 
         <EditText
             android:id="@+id/ac_secondRegister_etConfirmPassword"
             android:layout_width="@dimen/_256sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_etPassword"
-            android:background="@drawable/edit_text_background"
             android:layout_centerHorizontal="true"
-            android:hint="@string/confirmPassword"
-            android:paddingStart="@dimen/_8sdp"
-            android:paddingEnd="@dimen/_8sdp"
             android:layout_marginTop="@dimen/_15sdp"
-            android:inputType="textPassword" />
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/confirmPassword"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp" />
 
         <Button
             android:id="@+id/ac_secondRegister_btnRegister"
             android:layout_width="@dimen/_256sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@id/ac_secondRegister_etConfirmPassword"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/button_background"
-            android:layout_centerHorizontal="true"
+            android:hint="@string/kayitOl"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_8sdp"
-            android:hint="@string/kayitOl"
             android:textColorHint="@color/btnGirisHint" />
 
     </RelativeLayout>

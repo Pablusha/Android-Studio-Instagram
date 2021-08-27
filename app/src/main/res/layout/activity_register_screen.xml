@@ -28,15 +28,15 @@
             android:id="@+id/ac_register_btnFacebook"
             android:layout_width="@dimen/_256sdp"
             android:layout_height="wrap_content"
-            android:text="@string/girisWithFacebook"
-            android:textAllCaps="false"
-            android:background="@drawable/button_facebook_background"
-            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:background="@drawable/button_facebook_background"
             android:drawableStart="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
             android:paddingStart="@dimen/_57sdp"
             android:paddingEnd="@dimen/_57sdp"
-            android:layout_marginTop="@dimen/_36sdp" />
+            android:text="@string/girisWithFacebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
         <View
             android:layout_width="@dimen/_108sdp"
@@ -67,9 +67,9 @@
             android:id="@+id/ac_register_btnEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/ac_register_btnFacebook"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_63sdp"
-            android:layout_below="@id/ac_register_btnFacebook"
             android:background="@android:color/transparent"
             android:text="@string/EmailOrUsernameText"
             android:textAllCaps="false"
