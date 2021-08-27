@@ -36,7 +36,7 @@
             android:drawableStart="@drawable/ic__296499_fb_facebook_facebook_logo_icon"
             android:paddingStart="@dimen/_57sdp"
             android:paddingEnd="@dimen/_57sdp"
-            android:layout_marginTop="@dimen/_40sdp" />
+            android:layout_marginTop="@dimen/_36sdp" />
 
         <View
             android:layout_width="@dimen/_108sdp"
