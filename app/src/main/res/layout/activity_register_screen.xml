@@ -85,14 +85,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_65sdp"
             android:background="@color/viewColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_80sdp"
-            android:layout_marginTop="@dimen/_76sdp"
+            android:layout_marginTop="@dimen/_80sdp"
             android:text="@string/hesabinVarMi"
             android:textColor="@color/gray"
             android:textSize="@dimen/_10sdp" />
@@ -102,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_181sdp"
-            android:layout_marginTop="@dimen/_76sdp"
+            android:layout_marginTop="@dimen/_80sdp"
             android:text="@string/girisYap"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"

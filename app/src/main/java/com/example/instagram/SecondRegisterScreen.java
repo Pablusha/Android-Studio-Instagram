@@ -49,6 +49,10 @@ public class SecondRegisterScreen extends AppCompatActivity {
                     Toast.makeText(SecondRegisterScreen.this,"Şifreleriniz uyuşmuyor.",Toast.LENGTH_SHORT).show();
                 }
 
+                
+
+
+
 
             }
         });
@@ -81,6 +85,9 @@ public class SecondRegisterScreen extends AppCompatActivity {
             !confPassword.isEmpty()) {
                 btnKayit.setBackgroundResource(R.drawable.button_facebook_background);
                 btnKayit.setHintTextColor(getResources().getColor(R.color.white));
+            } else {
+                btnKayit.setBackgroundResource(R.drawable.button_background);
+                btnKayit.setHintTextColor(getResources().getColor(R.color.btnGirisHint));
             }
 
         }
