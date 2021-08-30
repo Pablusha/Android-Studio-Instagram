@@ -44,7 +44,8 @@
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_10sdp"
             android:singleLine="true"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_12sdp"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/ac_login_btnGirisYap"
@@ -71,10 +72,11 @@
         <TextView
             android:id="@+id/ac_login_tvGirisYardim"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_20sdp"
             android:layout_below="@id/ac_login_btnGirisYap"
             android:layout_marginStart="@dimen/_150sdp"
             android:layout_marginTop="@dimen/_13sdp"
+            android:onClick="resetPassword"
             android:text="@string/girisYardimLink"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"
@@ -148,7 +150,8 @@
             android:text="@string/textKayitLink"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="goToRegister" />
 
     </RelativeLayout>
 

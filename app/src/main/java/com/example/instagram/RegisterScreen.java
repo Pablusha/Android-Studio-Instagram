@@ -19,34 +19,11 @@ public class RegisterScreen extends AppCompatActivity {
         setContentView(R.layout.activity_register_screen);
         initViews();
 
-        goToLogin();
-        goToSecondRegisterScreen();
-
     }
 
     private void initViews() {
         txtGirisYap = findViewById(R.id.ac_register_txtGirisYap);
         btnKaydol = findViewById(R.id.ac_register_btnEmail);
-    }
-
-    private void goToLogin() {
-        txtGirisYap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(RegisterScreen.this,LoginActivity.class));
-                finish();
-            }
-        });
-    }
-
-    private void goToSecondRegisterScreen() {
-        btnKaydol.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(RegisterScreen.this,SecondRegisterScreen.class));
-                finish();
-            }
-        });
     }
 
     @Override
@@ -57,4 +34,24 @@ public class RegisterScreen extends AppCompatActivity {
         finish();
     }
 
+
+    public void goToSecondRegister(View view) {
+        btnKaydol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RegisterScreen.this,SecondRegisterScreen.class));
+                finish();
+            }
+        });
+    }
+
+    public void goToLogin(View view) {
+        txtGirisYap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RegisterScreen.this,LoginActivity.class));
+                finish();
+            }
+        });
+    }
 }

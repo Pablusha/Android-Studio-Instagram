@@ -2,13 +2,22 @@ package com.example.instagram;
 
 public class User {
 
-    String username,fullName,email,password;
+    String username,fullName,email,password,bio;
 
-    public User (String username, String fullName, String email, String password) {
+    public User (String username, String fullName, String email, String password, String bio) {
         this.username = username;
         this.fullName = fullName;
         this.email = email;
         this.password = password;
+        this.bio = bio;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 
     public String getUsername() {

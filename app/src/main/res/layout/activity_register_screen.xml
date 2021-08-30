@@ -74,7 +74,8 @@
             android:text="@string/EmailOrUsernameText"
             android:textAllCaps="false"
             android:textColor="@color/facebook"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="goToSecondRegister" />
 
     </RelativeLayout>
 
@@ -106,7 +107,8 @@
             android:text="@string/girisYap"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="goToLogin" />
 
     </RelativeLayout>
 

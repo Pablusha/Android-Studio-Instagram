@@ -27,10 +27,9 @@ import java.util.Locale;
 
 public class SecondRegisterScreen extends AppCompatActivity {
 
-    EditText etUsername,etFullName,etEmail,etPassword,etConfirmPassword;
-    Button btnKayit;
-    FirebaseAuth firebaseAuth;
-    FirebaseUser user;
+    private EditText etUsername,etFullName,etEmail,etPassword,etConfirmPassword;
+    private Button btnKayit;
+    private FirebaseAuth firebaseAuth;
     DatabaseReference databaseReference;
 
     @Override
@@ -41,38 +40,36 @@ public class SecondRegisterScreen extends AppCompatActivity {
         changeButtonBackground();
 
         firebaseAuth = FirebaseAuth.getInstance();
+        register();
+    }
 
+    private void register() {
         btnKayit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                register();
+                String username = etUsername.getText().toString();
+                String fullName = etFullName.getText().toString();
+                String email = etEmail.getText().toString();
+                String password = etPassword.getText().toString();
+                String confPassword = etConfirmPassword.getText().toString();
+
+                if (TextUtils.isEmpty(username) || TextUtils.isEmpty(fullName) || TextUtils.isEmpty(email)
+                        || TextUtils.isEmpty(password) || TextUtils.isEmpty(confPassword)) {
+                    Toast.makeText(SecondRegisterScreen.this,"Alanlar boş bırakılamaz.",
+                            Toast.LENGTH_SHORT).show();
+                } else if (password.length() < 6) {
+                    Toast.makeText(SecondRegisterScreen.this,"Şifrenizin uzunluğu 6 karakterden " +
+                            "fazla olmalıdır.",Toast.LENGTH_LONG).show();
+                } else if (!TextUtils.equals(password,confPassword)) {
+                    Toast.makeText(SecondRegisterScreen.this,"Şifreleriniz uyuşmuyor.",Toast.LENGTH_SHORT).show();
+                } else {
+                    createUser(username,fullName,email,password);
+                }
             }
         });
-
     }
 
-    public void register() {
-        String username = etUsername.getText().toString();
-        String fullName = etFullName.getText().toString();
-        String email = etEmail.getText().toString();
-        String password = etPassword.getText().toString();
-        String confPassword = etConfirmPassword.getText().toString();
-
-        if (TextUtils.isEmpty(username) || TextUtils.isEmpty(fullName) || TextUtils.isEmpty(email)
-                || TextUtils.isEmpty(password) || TextUtils.isEmpty(confPassword)) {
-            Toast.makeText(SecondRegisterScreen.this,"Alanlar boş bırakılamaz.",
-                    Toast.LENGTH_SHORT).show();
-        } else if (password.length() < 6) {
-            Toast.makeText(SecondRegisterScreen.this,"Şifrenizin uzunluğu 6 karakterden " +
-                    "fazla olmalıdır.",Toast.LENGTH_LONG).show();
-        } else if (!TextUtils.equals(password,confPassword)) {
-            Toast.makeText(SecondRegisterScreen.this,"Şifreleriniz uyuşmuyor.",Toast.LENGTH_SHORT).show();
-        } else {
-            createUser(username,fullName,email,password);
-        }
-    }
-
-    public void createUser(String username,String fullName,String email,String password) {
+    private void createUser(String username,String fullName,String email,String password) {
         firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -85,22 +82,24 @@ public class SecondRegisterScreen extends AppCompatActivity {
                                     .child(userId);
 
                             HashMap<String, Object> hashMap = new HashMap<>();
-                            hashMap.put("id",userId);
                             hashMap.put("username",username.toLowerCase(Locale.ROOT));
                             hashMap.put("fullName",fullName);
+                            hashMap.put("email",email);
                             hashMap.put("bio","");
 
                             databaseReference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        startActivity(new Intent(SecondRegisterScreen.this,LoginActivity.class));
+                                        Toast.makeText(SecondRegisterScreen.this,"Kayıt işlemi başarılı.",
+                                                Toast.LENGTH_LONG).show();
+                                        startActivity(new Intent(SecondRegisterScreen.this,HomeActivity.class));
                                         finish();
                                     }
                                 }
                             });
                         } else {
-                            Toast.makeText(SecondRegisterScreen.this,task.getException().toString(),
+                            Toast.makeText(SecondRegisterScreen.this,"E-posta adresi zaten kayıtlı.",
                                     Toast.LENGTH_LONG).show();
                         }
                     }
