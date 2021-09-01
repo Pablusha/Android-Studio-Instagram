@@ -50,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         login();
-        
     }
 
     @Override
@@ -64,7 +63,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this,HomeActivity.class));
             finish();
         }
-
     }
 
     private void login() {
