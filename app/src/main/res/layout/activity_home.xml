@@ -7,4 +7,21 @@
     tools:context=".HomeActivity"
     android:orientation="vertical" >
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ac_home_bottomNavBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/ac_home_bottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/colorAccent"
+            app:labelVisibilityMode="unlabeled"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 </RelativeLayout>
