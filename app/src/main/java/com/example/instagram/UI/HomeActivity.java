@@ -49,31 +49,21 @@ public class HomeActivity extends AppCompatActivity {
             new NavigationBarView.OnItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.nav_home:
-                            selectedFragment = new HomeFragment();
-                            break;
-                        case R.id.nav_search:
-                            selectedFragment = new SearchFragment();
-                            break;
-
-                        case R.id.nav_add:
-                            startActivity(new Intent(HomeActivity.this, PostActivity.class));
-                            finish();
-                            break;
-
-                        case R.id.nav_heart:
-                            selectedFragment = new NotificationFragment();
-                            break;
-
-                        case R.id.nav_profile:
-                            SharedPreferences.Editor editor = getSharedPreferences("PREFS",MODE_PRIVATE)
-                                    .edit();
-                            editor.putString("profileId",FirebaseAuth.getInstance().getCurrentUser().getUid());
-                            editor.apply();
-                            selectedFragment = new ProfileFragment();
-                            break;
-
+                    if (item.getItemId() == R.id.nav_home) {
+                        selectedFragment = new HomeFragment();
+                    } else if (item.getItemId() == R.id.nav_search) {
+                        selectedFragment = new SearchFragment();
+                    } else if (item.getItemId() == R.id.nav_add) {
+                        startActivity(new Intent(HomeActivity.this,PostActivity.class));
+                        finish();
+                    } else if (item.getItemId() == R.id.nav_heart) {
+                        selectedFragment = new NotificationFragment();
+                    } else if (item.getItemId() == R.id.nav_profile) {
+                        SharedPreferences.Editor editor = getSharedPreferences("PREFS",MODE_PRIVATE)
+                                .edit();
+                        editor.putString("profileId",FirebaseAuth.getInstance().getCurrentUser().getUid());
+                        editor.apply();
+                        selectedFragment = new ProfileFragment();
                     }
 
                     if (selectedFragment != null) {
