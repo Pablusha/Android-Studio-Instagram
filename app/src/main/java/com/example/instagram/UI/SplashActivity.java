@@ -1,4 +1,4 @@
-package com.example.instagram;
+package com.example.instagram.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
 import android.widget.TextView;
+
+import com.example.instagram.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -39,7 +41,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
                 finish();
             }
         },GECIS_SURESI);

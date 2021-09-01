@@ -14,19 +14,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name=".UI.PostActivity"
             android:exported="true" />
         <activity
-            android:name=".SecondRegisterScreen"
-            android:exported="true"></activity>
-        <activity
-            android:name=".RegisterScreen"
+            android:name=".UI.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".UI.SecondRegisterScreen"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".UI.RegisterScreen"
+            android:exported="true" />
+        <activity
+            android:name=".UI.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UI.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,9 +1,8 @@
-package com.example.instagram;
+package com.example.instagram.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.instagram.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -93,7 +93,7 @@ public class SecondRegisterScreen extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(SecondRegisterScreen.this,"Kayıt işlemi başarılı.",
                                                 Toast.LENGTH_LONG).show();
-                                        startActivity(new Intent(SecondRegisterScreen.this,HomeActivity.class));
+                                        startActivity(new Intent(SecondRegisterScreen.this, HomeActivity.class));
                                         finish();
                                     }
                                 }
@@ -158,7 +158,7 @@ public class SecondRegisterScreen extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
-        startActivity(new Intent(SecondRegisterScreen.this,RegisterScreen.class));
+        startActivity(new Intent(SecondRegisterScreen.this, RegisterScreen.class));
         finish();
     }
 }

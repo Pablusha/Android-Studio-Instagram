@@ -1,4 +1,4 @@
-package com.example.instagram;
+package com.example.instagram.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.instagram.R;
 
 public class RegisterScreen extends AppCompatActivity {
 
@@ -30,7 +32,7 @@ public class RegisterScreen extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
-        startActivity(new Intent(RegisterScreen.this,LoginActivity.class));
+        startActivity(new Intent(RegisterScreen.this, LoginActivity.class));
         finish();
     }
 
@@ -39,7 +41,7 @@ public class RegisterScreen extends AppCompatActivity {
         btnKaydol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RegisterScreen.this,SecondRegisterScreen.class));
+                startActivity(new Intent(RegisterScreen.this, SecondRegisterScreen.class));
                 finish();
             }
         });

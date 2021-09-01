@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
+    tools:context=".UI.HomeActivity"
     android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/ac_home_fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ac_home_bottomNavBarLayout" />
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/ac_home_bottomNavBarLayout"
@@ -17,7 +24,7 @@
             android:id="@+id/ac_home_bottomNavBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:itemIconTint="@color/colorAccent"
+            app:itemIconTint="@color/selector"
             app:labelVisibilityMode="unlabeled"
             android:background="?android:attr/windowBackground"
             app:menu="@menu/bottom_navigation" />
