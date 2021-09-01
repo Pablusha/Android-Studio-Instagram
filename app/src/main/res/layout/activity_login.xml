@@ -39,13 +39,12 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/edit_text_background"
-            android:drawableEnd="@drawable/ic__473003_hide_hide_eye_hide_password_icon"
             android:hint="@string/sifreHint"
+            android:inputType="textPassword"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_10sdp"
             android:singleLine="true"
-            android:textSize="@dimen/_12sdp"
-            android:inputType="textPassword" />
+            android:textSize="@dimen/_12sdp" />
 
         <Button
             android:id="@+id/ac_login_btnGirisYap"
@@ -127,16 +126,16 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:layout_below="@id/ac_login_btnGirisWithFacebook"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:background="@color/viewColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ac_login_view"
-            android:text="@string/textKayit"
-            android:layout_marginTop="@dimen/_11sdp"
             android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:text="@string/textKayit"
             android:textColor="@color/gray"
             android:textSize="@dimen/_10sdp" />
 
@@ -146,7 +145,7 @@
             android:layout_height="@dimen/_30sdp"
             android:layout_below="@id/ac_login_view"
             android:layout_marginStart="@dimen/_168sdp"
-            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_13sdp"
             android:text="@string/textKayitLink"
             android:textColor="@color/textLinkColor"
             android:textSize="@dimen/_10sdp"

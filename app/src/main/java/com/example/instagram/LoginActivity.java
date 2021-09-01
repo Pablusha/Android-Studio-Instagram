@@ -4,12 +4,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -127,7 +130,7 @@ public class LoginActivity extends AppCompatActivity {
                         firebaseAuth.sendPasswordResetEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Toast.makeText(LoginActivity.this,"E-posta adresinize sıfırlama" +
+                                Toast.makeText(LoginActivity.this,"E-posta adresinize sıfırlama " +
                                         "bağlantısı gönderildi",Toast.LENGTH_LONG).show();
 
                             }
