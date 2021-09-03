@@ -2,14 +2,36 @@ package com.example.instagram.Model;
 
 public class User {
 
-    String username,fullName,email,password,bio;
+    String username,fullName,email,password,bio,imageUrl,id;
 
-    public User (String username, String fullName, String email, String password, String bio) {
+    public User (String username, String fullName, String email, String password, String bio, String imageUrl,
+    String id) {
         this.username = username;
         this.fullName = fullName;
         this.email = email;
         this.password = password;
         this.bio = bio;
+        this.imageUrl = imageUrl;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public User() {
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getBio() {

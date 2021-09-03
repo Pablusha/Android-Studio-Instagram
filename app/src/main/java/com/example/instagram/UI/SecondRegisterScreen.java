@@ -86,6 +86,7 @@ public class SecondRegisterScreen extends AppCompatActivity {
                             hashMap.put("fullName",fullName);
                             hashMap.put("email",email);
                             hashMap.put("bio","");
+                            hashMap.put("imageUrl","https://firebasestorage.googleapis.com/v0/b/instagram-80b53.appspot.com/o/emptyprofile.jpg?alt=media&token=fa31cb79-d2bf-437e-a777-6db2197badde");
 
                             databaseReference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
